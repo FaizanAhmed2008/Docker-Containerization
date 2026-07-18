@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shortly</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card">
+        <h1>Shortly</h1>
+        <p class="subtitle">Turn long links into short, shareable URLs in seconds.</p>
+
+        <form id="shorten-form">
+          <input
+            id="url-input"
+            type="url"
+            name="url"
+            placeholder="Paste your long URL here"
+            required
+          />
+          <button type="submit">Shorten URL</button>
+        </form>
+
+        <div id="result" class="result" hidden>
+          <p>Your short link:</p>
+          <a id="short-link" href="#" target="_blank" rel="noopener"></a>
+          <button id="copy-btn" type="button">Copy</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
