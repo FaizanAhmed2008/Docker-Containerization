@@ -2,18 +2,22 @@ version: '3.7'
 
 services:
   node-app:
-    build: ./node
+    build:
+      context: ./node
+      network: host
     ports:
       - 3000:3000
 
   python-app:
-    build: ./python
+    build:
+      context: ./python
+      network: host
     ports:
       - 4000:4000
 
   springboot-app:
-    build: ./springboot
+    build:
+      context: ./springboot
+      network: host
     ports:
      - 8080:8080
-
-
